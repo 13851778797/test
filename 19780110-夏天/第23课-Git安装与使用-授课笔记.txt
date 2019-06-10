@@ -1,52 +1,52 @@
-		����ָ��˵��
+﻿		考试指导说明
 
-		ѧ�ţ�xxx	   ������xxx
+		学号：xxx	   姓名：xxx
 
-һ����װGit
-1������
-2���������غõİ�װ����
-   һ·next�����Install�����Finish
-3����֤�Ƿ�װ�ɹ�
+一、安装Git
+1、下载
+2、运行下载好的安装程序
+   一路next，点击Install，点击Finish
+3、验证是否安装成功
 
-������¡Զ�̿�
-1����GitBash������ָ��λ��
-2��git clone https://github.com/13851778797/exam2019.git�����ڱ��ؿ�¡һ����Զ�̿�һ���İ汾��
-3�����ؿ�����ο�����
-4�������ؿ�ͬ����Զ�̿�
+二、克隆远程库
+1、打开GitBash，进入指定位置
+2、git clone https://github.com/13851778797/exam2019.git，将在本地克隆一套与远程库一样的版本库
+3、本地库操作参考下文
+4、将本地库同步到远程库
    git push origin master
 
-��������git�û���Ϣ
-1��һ��Ҫ��GitHub��վ��ע��һ���û�brucetest1234 / Bruce996t2�����䣺0222@ncc.edu.cn
-2�������û���
- ��Git Bash
- ִ����� git config --global user.name ����û���
- ���磺     git config --global user.name brucetest1234
-3����������
- ִ����� git config --global user.email 0222@ncc.edu.cn
-4���鿴������Ϣ
- ִ����� git config --list
+三、配置git用户信息
+1、一定要在GitHub网站上注册一个用户brucetest1234 / Bruce996t2，邮箱：0222@ncc.edu.cn
+2、设置用户名
+ 打开Git Bash
+ 执行命令： git config --global user.name 你的用户名
+ 例如：     git config --global user.name brucetest1234
+3、设置邮箱
+ 执行命令： git config --global user.email 0222@ncc.edu.cn
+4、查看配置信息
+ 执行命令： git config --list
 
-�塢git�������
-1����ֿ��ϴ����ļ�/Ŀ¼
-��1���½�һ���ļ�a.txt �� Ŀ¼��18302010-��С����
-��2�����ӵ�git�ݴ�����git add a.txt �� 18302010-��С��
-��3���ύ���ֿ⣺git commit -m "���˵��"
+五、git常规操作
+1、向仓库上传新文件/目录
+（1）新建一个文件a.txt 或 目录“18302010-李小龙”
+（2）添加到git暂存区：git add a.txt 或 18302010-李小龙
+（3）提交到仓库：git commit -m "你的说明"
 
-2���鿴git״̬
- ִ�����git status
+2、查看git状态
+ 执行命令：git status
 
-3���޸��ļ�
-��1���޸��ļ�a.txt����
-��2�����ӵ�git�ݴ�����git add a.txt
-��3���ύ���ֿ⣺git commit -m "���˵��"
+3、修改文件
+（1）修改文件a.txt内容
+（2）添加到git暂存区：git add a.txt
+（3）提交到仓库：git commit -m "你的说明"
 
-4�������޸ģ��޸����ڹ���������û�����ӵ��ݴ�����
+4、撤销修改（修改仍在工作区，并没有添加到暂存区）
  git checkout -- a.txt
 
-5�����˰汾���޸��Ѿ����ӵ��ݴ������ֿ߲��ˣ�
+5、回退版本（修改已经添加到暂存区或者仓库了）
  git reset --hard HEAD
 
-6��ɾ���ļ���ͬ��3���޸��ļ���
+6、删除文件，同“3、修改文件”
 
-7���鿴��־
+7、查看日志
  git log
